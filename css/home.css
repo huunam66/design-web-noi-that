@@ -126,6 +126,7 @@ header .s-log .log .go a:hover,
   font-weight: 400 !important;
   letter-spacing: 0.1rem;
   width: 15rem;
+  z-index: 9999999;
 }
 
 .nav-list .nav-item .prod .prod--item a:hover{
@@ -193,6 +194,7 @@ header .s-log .s .btn-ops{
   padding: 0.8rem;
   border: 2px solid #b17a29;
   border-radius: 5rem;
+  z-index: 9999;
 }
 
 header .s-log .cart ion-icon:hover,
@@ -216,6 +218,20 @@ header .s-log .s .c-in button{
   height: 100%;
   background-color: #eee;
   z-index: 9;
+}
+
+.succinct .prod{
+  right: -4rem;
+}
+
+.succinct .bxs-objects-horizontal-left{
+  font-size: 3.2rem;
+  cursor: pointer;
+}
+
+.nav-list .nav-item{
+  display: flex;
+  align-items: center;
 }
 
 
@@ -980,3 +996,191 @@ footer .container .grid-item .tit::after{
 }
 
 
+
+/* ============== nav mobile ==============*/
+
+.mb {
+  /* transform: translateX(-100%); */
+}
+
+.mb .navbar{
+  position: fixed;
+  width: 100%;
+  right: -100%;
+  top: 0;
+  background-color: rgba(241, 214, 173, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.mb .navbar .nav-list{
+  width: 50%;
+  position: relative;
+  display: block;
+  padding: 2rem;
+}
+
+
+.mb .navbar .nav-item p{
+  font-size: 2.4rem;
+  color: #555;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.mb .navbar .nav-item a{
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #555;
+}
+
+
+.mb .navbar .nav-item p:hover,
+.mb .navbar .nav-item a:hover{
+  text-decoration: underline;
+  color: #b17a29;
+}
+
+.mb .navbar .nav-item{
+  margin: 3.2rem 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mb .navbar .nav-item .more,
+.mb .navbar .nav-item .more{
+  display: block;
+  padding: 4rem 0.6rem;
+  transform: rotate(-90deg);
+  font-size: 2.4rem;
+  position: absolute;
+  top: -1.4rem;
+  cursor: pointer;
+}
+
+.nav-more{
+  animation: ani-more-nav .7s forwards;
+}
+
+.mb .navbar .nav-item .prod{
+  display: none;
+  position: unset;
+  background-color: inherit;
+  box-shadow: none; 
+  overflow: hidden;
+  /* height: 0; */
+}
+
+.mb .navbar .nav-item .prod li{
+  padding: 2rem;
+  border: none;
+  border-bottom: 0.2rem solid #eee !important;
+  background-color: #f1d6ad
+
+}
+
+.mb .navbar .nav-item .prod li:first-child{
+  margin-top: 3.2rem;
+}
+
+.mb .navbar .nav-item .prod li:hover{
+  background-color: #eee;
+}
+
+.mb .navbar .nav-item .prod a:hover{
+  background-color: transparent !important;
+}
+
+.mb .navbar .nav-item .prod a{
+  display: inline;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.mb .navbar .log{
+  list-style: none;
+  width: 100%;
+}
+
+
+
+.mb .navbar .us{
+  margin: 4.4rem 0 2.4rem 0;
+}
+
+.mb .navbar .us p{
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.mb .navbar .user{
+  font-size: 5.2rem;
+  padding: 1.2rem;
+  border: 1px solid #c19554;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #eee;
+  color: #b17a29;
+}
+
+.mb .navbar .go{
+  /* display: grid; */
+  display: flex;
+  flex-direction: column;
+  /* grid-template-columns: minmax(calc(100% / 3), 100%); */
+  /* grid-auto-flow: column; */
+  align-items: center;
+  overflow: auto;
+  max-width: 50%;
+  max-height: 20rem;
+  margin: auto;
+  padding: 1rem;
+  border: 1px solid #eee;
+  gap: 1rem;
+}
+
+.mb .navbar .go a{
+  width: 100%;
+  padding: 1.2rem 1rem;
+  box-sizing: border-box;
+  color: #555;
+  background-color: #eee;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.icon-o-cl {
+  margin-left: 1.6rem;
+  margin-right: -0.4rem;
+  cursor: pointer;
+  /* animation: ani-icon-o-cl-op-nav .5s forwards; */
+}
+
+.icon-o-cl span{
+  position: sticky;
+  display: inline-block;
+  padding: 1rem;
+  border-top: 0.5rem solid #555;
+  border-right: 0.5rem solid #555;
+  transform: rotate(-135deg);
+}
+
+.icon-o-cl span:last-child{
+  left: -2rem;
+}
+
+@keyframes ani-icon-o-cl-op-nav{
+  50%{
+    transform: rotate(180deg);
+  }
+  100%{
+    transform: translateX(20rem) rotate(180deg);
+  }
+}
