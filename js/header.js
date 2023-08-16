@@ -141,23 +141,29 @@ const e_ct_mouseup = () => {
 };
 e_ct_mouseup();
 
+const grid_box_item_sect5 = grid_box_sect_5.querySelectorAll(".grid-box-item");
+const auto_h_gridItem_sect5 = () => {
+  for (let key in grid_box_item_sect5) {
+    let h_card = card[key].offsetHeight;
+    grid_box_item_sect5[key].style = `--height-scgr-5: ${h_card}px`;
+  }
+};
+
+// const auto_height_bg_sect_1 = () => {
+//   let wd_cont = cont_sect_1.offsetWidth;
+//   cont_sect_1.style = `--height-cs1: ${wd_cont / 2}px`;
+// };
+
 const e_win_resize = () => {
   window.addEventListener("resize", () => {
-    let wd_cont = cont_sect_1.offsetWidth;
-    // let percent_wd = parseFloat(wd_cont) / r_width_cont;
-    // let ud_height = r_height_cont * percent_wd;
-    // console.log("r_width_cont: " + r_width_cont);
-    // console.log("wd_cont: " + wd_cont);
-    // console.log("ud_height: " + ud_height);
-    // console.log("percent_wd: " + percent_wd);
-    // cont_sect_1.classList.add("rez-h");
-    cont_sect_1.style = `--height-cs1: ${wd_cont / 2}px`;
+    // auto_height_bg_sect_1();
+    auto_h_gridItem_sect5();
   });
 };
 e_win_resize();
 
 const r_width_cont = cont_sect_1.offsetWidth;
-console.log("r_width_cont: " + r_width_cont);
 window.onload = () => {
-  cont_sect_1.style = `--height-cs1: ${r_width_cont / 2}px`;
+  auto_h_gridItem_sect5();
+  // cont_sect_1.style = `--height-cs1: ${r_width_cont / 2}px`;
 };
