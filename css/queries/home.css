@@ -18,11 +18,11 @@
 
 @media(max-width: 78.125em){
   
-  .sect-5 .container .grid-box{
+  .sect-card .container .grid-box{
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .sect-5 .container .card .btn-link-more{
+  .sect-card .container .card .btn-link-more{
     justify-content: space-around;
   }
 }
@@ -133,21 +133,21 @@
 }
 
 @media(max-width: 62.5em){
-  .sect-5 .container .grid-box{
+  .sect-card .container .grid-box{
     grid-template-columns: repeat(2, 1fr);
   }
 
   
-  .sect-5 .container .card .btn-link-more button,
-  .sect-5 .container .card .btn-link-more a{
+  .sect-card .container .card .btn-link-more button,
+  .sect-card .container .card .btn-link-more a{
     display: unset;
   }
 
-  .sect-5 .container .card .btn-link-more{
+  .sect-card .container .card .btn-link-more{
     justify-content: flex-end;
   }
 
-  .sect-5 .container .card .btn-link-more button{
+  .sect-card .container .card .btn-link-more button{
     margin-right: 1.2rem;
   }
 }
@@ -157,7 +157,7 @@
     font-size: 52%;
   }
 
-  .sect-5 .container .grid-box {
+  .sect-card .container .grid-box {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -208,15 +208,15 @@
 }
 
 @media(max-width: 43.75em){
-  .sect-5 .container .card .btn-link-more a{
+  .sect-card .container .card .btn-link-more a{
     display: none;
   }
   
-  .sect-5 .container .card .btn-link-more{
+  .sect-card .container .card .btn-link-more{
     justify-content: center;
   }
 
-  .sect-5 .container .card .btn-link-more button{
+  .sect-card .container .card .btn-link-more button{
     margin: 0;
   }
 }
@@ -321,7 +321,7 @@
 @media(max-width: 37.5em){
 
 
-  .sect-5 .container .card .c-in .tit-c {
+  .sect-card .container .card .c-in .tit-c {
     padding-top: 3rem;
   }
 }
