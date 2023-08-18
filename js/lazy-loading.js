@@ -1,6 +1,6 @@
 $(document).ready(function () {
-  const sect_card = $("body").find(".sect-card");
-  const card = sect_card.find(".card");
+  const sect = $("body").find("section");
+  const card = sect.find(".card, .box, .box-img");
   const intersect_card_view = () => {
     card.each(function () {
       let seft_card = $(this);
@@ -17,7 +17,8 @@ $(document).ready(function () {
                 $(this).removeClass("lazy-loading-05");
               }, 500);
             });
-            intersect_card.observe(sect_card[0]);
+            intersect_card.unobserve(seft_card[0]);
+            intersect_card.disconnect();
           }, 400);
         }
       });
