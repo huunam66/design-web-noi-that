@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/home.css" />
     <link rel="stylesheet" href="../css/card.css" />
-    <link rel="stylesheet" href="../css/queries/home.css">
+    <link rel="stylesheet" href="../css/queries/home.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,14 +26,16 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css"
     />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>Trang Chủ</title>
   </head>
   <body>
     <header>
       <a href="#">
-      <img alt="" class="logo" 
-        src="../img/sys/logo-noi-that (5).jpg"/>
+        <img alt="" class="logo" src="../img/sys/logo-noi-that (5).jpg" />
       </a>
       <nav class="navbar">
         <!-- <ul class="log">
@@ -51,7 +53,7 @@
           </li>
           <li class="nav-item">
             <!-- <p>sản phẩm</p> -->
-            
+
             <a href="#">
               sản phẩm
               <ion-icon class="down-ic" name="chevron-down-outline"></ion-icon>
@@ -128,10 +130,10 @@
         </ul>
       </nav>
       <div class="s-log">
-        <a href="#" class="cart-ic">
+        <p class="cart-ic">
           <ion-icon name="cart-outline"></ion-icon>
           <span>10</span>
-        </a>
+        </p>
         <form class="s" action="#">
           <div class="c-in d-none">
             <input type="text" name="search" placeholder="Tìm kiếm" />
@@ -149,601 +151,967 @@
             <a href="#">Đăng ký</a>
           </li>
         </ul>
-          <!-- <div class="icon-o-cl">
+        <!-- <div class="icon-o-cl">
           <span></span>
           <span></span>
         </div> -->
       </div>
     </header>
-    
-    <section class="sect-1">
-      <div class="container">
-        <div class="ct move-to">
+    <main>
+      <section class="cart">
+        <div class="box">
+          <ion-icon class="close" name="close-outline"></ion-icon>
+          <div class="tit-t">
+            <p class="tit">giỏ hàng</p>
+            <!-- <p class="c-empty">không có sản phẩm nào trong giỏ hàng</p> -->
+          </div>
+          <button class="all-cb">tất cả</button>
+          <form class="cart-list" id="form-1" action="#" method="post">
+            <ul class="list-pr">
+              <li class="pr-item">
+                <figure>
+                  <input class="c-b" type="checkbox" name="" />
+                  <img
+                    src="../img/prod/BAN-LAM-VIEC-WING-MAU-DEN-768x511.jpg"
+                    alt=""
+                  />
+                  <div class="right">
+                    <p class="name-pr">
+                      ágagsggggggggggggggggggggggggggggggggggggggggggggagasgas
+                    </p>
+                    <p class="price-cou">
+                      <span>1.900.000</span>
+                      <span
+                        >SL:&nbsp;
+                        <input type="number" class="num-pr" value="1" />
+                      </span>
+                    </p>
+                  </div>
+                  <p class="del-pr">xóa</p>
+                </figure>
+              </li>
+              <li class="pr-item">
+                <figure>
+                  <input class="c-b" type="checkbox" name="" />
+                  <img
+                    src="../img/prod/BAN-LAM-VIEC-WING-MAU-DEN-768x511.jpg"
+                    alt=""
+                  />
+                  <div class="right">
+                    <p class="name-pr">
+                      ágagsggggggggggggggggggggggggggggggggggggggggggggagasgas
+                    </p>
+                    <p class="price-cou">
+                      <span>1.900.000</span>
+                      <span
+                        >SL:&nbsp;
+                        <input type="number" class="num-pr" value="1" />
+                      </span>
+                    </p>
+                  </div>
+                  <p class="del-pr">xóa</p>
+                </figure>
+              </li>
+              <li class="pr-item">
+                <figure>
+                  <input class="c-b" type="checkbox" name="" />
+                  <img
+                    src="../img/prod/BAN-LAM-VIEC-WING-MAU-DEN-768x511.jpg"
+                    alt=""
+                  />
+                  <div class="right">
+                    <p class="name-pr">
+                      ágagsggggggggggggggggggggggggggggggggggggggggggggagasgas
+                    </p>
+                    <p class="price-cou">
+                      <span>1.900.000</span>
+                      <span
+                        >SL:&nbsp;
+                        <input type="number" class="num-pr" value="1" />
+                      </span>
+                    </p>
+                  </div>
+                  <p class="del-pr">xóa</p>
+                </figure>
+              </li>
+              <li class="pr-item">
+                <figure>
+                  <input class="c-b" type="checkbox" name="" />
+                  <img
+                    src="../img/prod/BAN-LAM-VIEC-WING-MAU-DEN-768x511.jpg"
+                    alt=""
+                  />
+                  <div class="right">
+                    <p class="name-pr">
+                      ágagsggggggggggggggggggggggggggggggggggggggggggggagasgas
+                    </p>
+                    <p class="price-cou">
+                      <span>1.900.000</span>
+                      <span
+                        >SL:&nbsp;
+                        <input type="number" class="num-pr" value="1" />
+                      </span>
+                    </p>
+                  </div>
+                  <p class="del-pr">xóa</p>
+                </figure>
+              </li>
+              <li class="pr-item">
+                <figure>
+                  <input class="c-b" type="checkbox" name="" />
+                  <img
+                    src="../img/prod/BAN-LAM-VIEC-WING-MAU-DEN-768x511.jpg"
+                    alt=""
+                  />
+                  <div class="right">
+                    <p class="name-pr">
+                      ágagsggggggggggggggggggggggggggggggggggggggggggggagasgas
+                    </p>
+                    <p class="price-cou">
+                      <span>1.900.000</span>
+                      <span
+                        >SL:&nbsp;
+                        <input type="number" class="num-pr" value="1" />
+                      </span>
+                    </p>
+                  </div>
+                  <p class="del-pr">xóa</p>
+                </figure>
+              </li>
+              <li class="pr-item">
+                <figure>
+                  <input class="c-b" type="checkbox" name="" />
+                  <img
+                    src="../img/prod/BAN-LAM-VIEC-WING-MAU-DEN-768x511.jpg"
+                    alt=""
+                  />
+                  <div class="right">
+                    <p class="name-pr">
+                      ágagsggggggggggggggggggggggggggggggggggggggggggggagasgas
+                    </p>
+                    <p class="price-cou">
+                      <span>1.900.000</span>
+                      <span
+                        >SL:&nbsp;
+                        <input type="number" class="num-pr" value="1" />
+                      </span>
+                    </p>
+                  </div>
+                  <p class="del-pr">xóa</p>
+                </figure>
+              </li>
+              <li class="pr-item">
+                <figure>
+                  <input class="c-b" type="checkbox" name="" />
+                  <img
+                    src="../img/prod/BAN-LAM-VIEC-WING-MAU-DEN-768x511.jpg"
+                    alt=""
+                  />
+                  <div class="right">
+                    <p class="name-pr">
+                      ágagsggggggggggggggggggggggggggggggggggggggggggggagasgas
+                    </p>
+                    <p class="price-cou">
+                      <span>1.900.000</span>
+                      <span
+                        >SL:&nbsp;
+                        <input type="number" class="num-pr" value="1" />
+                      </span>
+                    </p>
+                  </div>
+                  <p class="del-pr">xóa</p>
+                </figure>
+              </li>
+              <li class="pr-item">
+                <figure>
+                  <input class="c-b" type="checkbox" name="" />
+                  <img
+                    src="../img/prod/BAN-LAM-VIEC-WING-MAU-DEN-768x511.jpg"
+                    alt=""
+                  />
+                  <div class="right">
+                    <p class="name-pr">
+                      ágagsggggggggggggggggggggggggggggggggggggggggggggagasgas
+                    </p>
+                    <p class="price-cou">
+                      <span>1.900.000</span>
+                      <span
+                        >SL:&nbsp;
+                        <input type="number" class="num-pr" value="1" />
+                      </span>
+                    </p>
+                  </div>
+                  <p class="del-pr">xóa</p>
+                </figure>
+              </li>
+              <li class="pr-item">
+                <figure>
+                  <input class="c-b" type="checkbox" name="" />
+                  <img
+                    src="../img/prod/BAN-LAM-VIEC-WING-MAU-DEN-768x511.jpg"
+                    alt=""
+                  />
+                  <div class="right">
+                    <p class="name-pr">
+                      ágagsggggggggggggggggggggggggggggggggggggggggggggagasgas
+                    </p>
+                    <p class="price-cou">
+                      <span>1.900.000</span>
+                      <span
+                        >SL:&nbsp;
+                        <input type="number" class="num-pr" value="1" />
+                      </span>
+                    </p>
+                  </div>
+                  <p class="del-pr">xóa</p>
+                </figure>
+              </li>
+              <li class="pr-item">
+                <figure>
+                  <input class="c-b" type="checkbox" name="" />
+                  <img
+                    src="../img/prod/BAN-LAM-VIEC-WING-MAU-DEN-768x511.jpg"
+                    alt=""
+                  />
+                  <div class="right">
+                    <p class="name-pr">
+                      ágagsggggggggggggggggggggggggggggggggggggggggggggagasgas
+                    </p>
+                    <p class="price-cou">
+                      <span>1.900.000</span>
+                      <span
+                        >SL:&nbsp;
+                        <input type="number" class="num-pr" value="1" />
+                      </span>
+                    </p>
+                  </div>
+                  <p class="del-pr">xóa</p>
+                </figure>
+              </li>
+            </ul>
+          </form>
+          <div class="price-buy">
+            <p class="total-pri">13.151.512</p>
+            <button type="button" form="form-1">mua hàng</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="sect-1">
+        <div class="container">
+          <div class="ct move-to">
+            <div class="tit">
+              <div class="t">
+                <h1>bộ sưu tập mới - coastal</h1>
+                <p>cảm hứng miền duyên hải</p>
+              </div>
+              <a href="#">xem chi tiết</a>
+            </div>
+            <div class="bg-abs"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sect-2 same-2-3">
+        <div class="container">
+          <div class="box">
+            <div class="ct">
+              <h1>TẶNG GÓI SƠN HOÀN THIỆN TRỊ GIÁ 15TR</h1>
+              <a href="#">xem chi tiết</a>
+            </div>
+            <div class="pic">
+              <img
+                data-set="../img/sys/Screenshot 2023-08-14 153705.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="box">
+            <div class="ct">
+              <h1>TRẢ GÓP LÃI SUẤT 0%</h1>
+              <a href="#">xem chi tiết</a>
+            </div>
+            <div class="pic">
+              <img
+                data-set="../img/sys/Screenshot 2023-08-14 153846.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sect-3 same-2-3">
+        <div class="container">
+          <div class="box">
+            <div class="ct">
+              <h1>THIẾT KẾ NỘI THẤT</h1>
+              <p>
+                Với kinh nghiệm phong phú trong lĩnh vực thiết kế và hoàn thiện
+                nội thất cùng đội ngũ thiết kế chuyên nghiệp, chúng tôi mang đến
+                giải pháp toàn diện trong nội thất.
+              </p>
+              <a href="#">xem thêm</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="pic">
+              <img
+                data-set="../img/sys/nha-xinh-thiet-ke-noi-that-ecopark-16523-1200x800.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sect-4">
+        <div class="container">
+          <div class="box-ct">
+            <div class="ct">
+              <p>Không gian phòng khách</p>
+              <p>
+                Phòng khách là không gian chính của ngôi nhà, là nơi sum họp gia
+                đình
+              </p>
+              <a href="#">
+                MẪU THIẾT KẾ &nbsp;
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+            </div>
+          </div>
+          <div class="box-ct">
+            <div class="ct">
+              <p>Đồ trang trí</p>
+              <p>
+                Mang lại những nguồn cảm hứng và nét sinh động cho không gian
+              </p>
+              <a href="#">
+                KHÁM PHÁ &nbsp;
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+            </div>
+          </div>
+          <div class="box-ct">
+            <div class="ct">
+              <p>Không gian phòng ngủ</p>
+              <p>
+                Những mẫu phòng ngủ của Nhà Xinh mang đến cảm giác ấm cúng, gần
+                gũi và thoải mái
+              </p>
+              <a href="#">
+                MẪU PHÒNG NGỦ &nbsp;
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+            </div>
+          </div>
+          <div class="box-ct">
+            <div class="ct">
+              <p>Không gian phòng ăn</p>
+              <p>
+                Một bữa ăn ngon luôn là mong ước của mỗi gia đình. Không gian
+                phòng ăn đóng vai trò rất quan trọng trong văn hóa Việt
+              </p>
+              <a href="#">
+                MẪU PHÒNG ĂN &nbsp;
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+            </div>
+          </div>
+          <div class="box-img">
+            <a href="#">
+              <div class="pic">
+                <img
+                  data-set="../img/sys/mau-phong-khach-nha-xinh-24523.jpg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
+          <div class="box-img">
+            <a href="#">
+              <div class="pic">
+                <img
+                  data-set="../img/sys/hang-trang-tri-nx-12-9-22.jpg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
+          <div class="box-img">
+            <a href="#">
+              <div class="pic">
+                <img data-set="../img/sys/mau-phong-ngu-16-5-23.jpg" alt="" />
+              </div>
+            </a>
+          </div>
+          <div class="box-img">
+            <a href="#">
+              <div class="pic">
+                <img
+                  data-set="../img/sys/banner-phong-an-nha-xinh-12-9-22.jpg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="sect-5 sect-card">
+        <div class="container">
           <div class="tit">
-            <div class="t">
-              <h1>bộ sưu tập mới - coastal</h1>
-              <p>cảm hứng miền duyên hải</p>
-            </div>
-            <a href="#">xem chi tiết</a>
-          </div>
-          <div class="bg-abs"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="sect-2 same-2-3">
-      <div class="container">
-        <div class="box">
-          <div class="ct">
-            <h1>TẶNG GÓI SƠN HOÀN THIỆN TRỊ GIÁ 15TR</h1>
-            <a href="#">xem chi tiết</a>
-          </div>
-          <div class="pic">
-            <img data-set="../img/sys/Screenshot 2023-08-14 153705.png" alt="">
-          </div>
-
-        </div>
-        <div class="box">
-          <div class="ct">
-            <h1>TRẢ GÓP LÃI SUẤT 0%</h1>
-            <a href="#">xem chi tiết</a>
-          </div>
-          <div class="pic">
-            <img data-set="../img/sys/Screenshot 2023-08-14 153846.png" alt="">
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="sect-3 same-2-3">
-      <div class="container">
-        <div class="box">
-          <div class="ct">
-            <h1>THIẾT KẾ NỘI THẤT</h1>
-            <p>Với kinh nghiệm phong phú trong lĩnh vực thiết kế và hoàn thiện nội thất cùng đội ngũ thiết kế chuyên nghiệp, chúng tôi mang đến giải pháp toàn diện trong nội thất.</p>
-            <a href="#">xem thêm</a>
-          </div>
-        </div>
-        <div class="box">
-          <div class="pic">
-            <img data-set="../img/sys/nha-xinh-thiet-ke-noi-that-ecopark-16523-1200x800.jpg" alt="">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="sect-4">
-      <div class="container">
-        <div class="box-ct">
-          <div class="ct">
-            <p>Không gian phòng khách</p>
-            <p>Phòng khách là không gian chính của ngôi nhà, là nơi sum họp gia đình</p>
+            <p>sản phẩm mới</p>
             <a href="#">
-              MẪU THIẾT KẾ &nbsp;
-              <ion-icon name="arrow-forward-outline"></ion-icon>
+              xem tất cả &nbsp;
+              <ion-icon name="chevron-forward-outline"></ion-icon>
             </a>
           </div>
-        </div>
-        <div class="box-ct">
-          <div class="ct">
-            <p>Đồ trang trí</p>
-            <p>Mang lại những nguồn cảm hứng và nét sinh động cho không gian</p>
-            <a href="#">
-              KHÁM PHÁ &nbsp;
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </a>
+          <div class="box">
+            <div class="grid-box">
+              <div class="grid-box-item">
+                <figure class="card">
+                  <a href="#" class="c-in">
+                    <div class="pic">
+                      <img
+                        data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg"
+                        alt=""
+                      />
+                      <img
+                        data-set="../img/prod/ban-wing-768x509.jpg"
+                        alt=""
+                        class="d-none"
+                      />
+                    </div>
+                    <p class="tit-c">Bàn làm việc Coastal</p>
+                    <div class="heart-prc">
+                      <ion-icon name="heart-outline"></ion-icon>
+                      <p>14,900,000&nbsp;<span>đ</span></p>
+                    </div>
+                  </a>
+                  <div class="btn-link-more">
+                    <button class="d-none" type="button">thêm vào giỏ</button>
+                    <a class="d-none" href="#">xem thêm</a>
+                  </div>
+                </figure>
+              </div>
+              <div class="grid-box-item">
+                <figure class="card">
+                  <a href="#" class="c-in">
+                    <div class="pic">
+                      <img
+                        data-set="../img/prod/Armchair-Coastal-vai-Sevilla-768x511.jpg"
+                        alt=""
+                      />
+                      <img
+                        data-set="../img/prod/Sofa-Coastal-1-cho-5-768x511.jpg"
+                        alt=""
+                        class="d-none"
+                      />
+                    </div>
+                    <p class="tit-c">Sofa Coastal 1 chỗ KD1085-18 xanh M2</p>
+                    <div class="heart-prc">
+                      <ion-icon name="heart-outline"></ion-icon>
+                      <p>15,900,000&nbsp;<span>đ</span></p>
+                    </div>
+                  </a>
+                  <div class="btn-link-more">
+                    <button class="d-none" type="button">thêm vào giỏ</button>
+                    <a class="d-none" href="#">xem thêm</a>
+                  </div>
+                </figure>
+              </div>
+              <div class="grid-box-item">
+                <figure class="card">
+                  <a href="#" class="c-in">
+                    <div class="pic">
+                      <img
+                        data-set="../img/prod/Ghe-an-Coastal-xanh.jpg"
+                        alt=""
+                      />
+                      <img
+                        data-set="../img/prod/phong-an-coastal.jpg"
+                        alt=""
+                        class="d-none"
+                      />
+                    </div>
+                    <p class="tit-c">Ghế ăn Coastal KD1085-18</p>
+                    <div class="heart-prc">
+                      <ion-icon name="heart-outline"></ion-icon>
+                      <p>5,100,000&nbsp;<span>đ</span></p>
+                    </div>
+                  </a>
+                  <div class="btn-link-more">
+                    <button class="d-none" type="button">thêm vào giỏ</button>
+                    <a class="d-none" href="#">xem thêm</a>
+                  </div>
+                </figure>
+              </div>
+              <div class="grid-box-item">
+                <figure class="card">
+                  <a href="#" class="c-in">
+                    <div class="pic">
+                      <img
+                        data-set="../img/prod/Sofa-Coastal-3-cho-768x511.jpg"
+                        alt=""
+                      />
+                      <img
+                        data-set="../img/prod/BST-Coastal-3-1-768x512.jpg"
+                        alt=""
+                        class="d-none"
+                      />
+                    </div>
+                    <p class="tit-c">Sofa Coastal 2 chỗ KD1085-18 xanh M2</p>
+                    <div class="heart-prc">
+                      <ion-icon name="heart-outline"></ion-icon>
+                      <p>32,900,000&nbsp;<span>đ</span></p>
+                    </div>
+                  </a>
+                  <div class="btn-link-more">
+                    <button class="d-none" type="button">thêm vào giỏ</button>
+                    <a class="d-none" href="#">xem thêm</a>
+                  </div>
+                </figure>
+              </div>
+              <div class="grid-box-item">
+                <figure class="card">
+                  <a href="#" class="c-in">
+                    <div class="pic">
+                      <img
+                        data-set="../img/prod/Giuong-Coastal-1m8-vang-1-768x511.jpg"
+                        alt=""
+                      />
+                      <img
+                        data-set="../img/prod/BST-Coastal-4-768x512.jpg"
+                        alt=""
+                        class="d-none"
+                      />
+                    </div>
+                    <p class="tit-c">Giường Coastal vàng 1m8</p>
+                    <div class="heart-prc">
+                      <ion-icon name="heart-outline"></ion-icon>
+                      <p>31,900,000&nbsp;<span>đ</span></p>
+                    </div>
+                  </a>
+                  <div class="btn-link-more">
+                    <button class="d-none" type="button">thêm vào giỏ</button>
+                    <a class="d-none" href="#">xem thêm</a>
+                  </div>
+                </figure>
+              </div>
+              <div class="grid-box-item">
+                <figure class="card">
+                  <a href="#" class="c-in">
+                    <div class="pic">
+                      <img
+                        data-set="../img/prod/BAN-LAM-VIEC-WING-MAU-DEN-768x511.jpg"
+                        alt=""
+                      />
+                      <img
+                        data-set="../img/prod/ban-wing-768x509.jpg"
+                        alt=""
+                        class="d-none"
+                      />
+                    </div>
+                    <p class="tit-c">Bàn làm việc Coastal</p>
+                    <div class="heart-prc">
+                      <ion-icon name="heart-outline"></ion-icon>
+                      <p>14,900,000&nbsp;<span>đ</span></p>
+                    </div>
+                  </a>
+                  <div class="btn-link-more">
+                    <button class="d-none" type="button">thêm vào giỏ</button>
+                    <a class="d-none" href="#">xem thêm</a>
+                  </div>
+                </figure>
+              </div>
+              <div class="grid-box-item">
+                <figure class="card">
+                  <a href="#" class="c-in">
+                    <div class="pic">
+                      <img
+                        data-set="../img/prod/Tu-Cabinet-Coastal-768x511.jpg"
+                        alt=""
+                      />
+                      <img
+                        data-set="../img/prod/Tu-Cabinet-Coastal-1-768x511.jpg"
+                        alt=""
+                        class="d-none"
+                      />
+                    </div>
+                    <p class="tit-c">Tủ Cabinet Coastal</p>
+                    <div class="heart-prc">
+                      <ion-icon name="heart-outline"></ion-icon>
+                      <p>18,900,000&nbsp;<span>đ</span></p>
+                    </div>
+                  </a>
+                  <div class="btn-link-more">
+                    <button class="d-none" type="button">thêm vào giỏ</button>
+                    <a class="d-none" href="#">xem thêm</a>
+                  </div>
+                </figure>
+              </div>
+              <div class="grid-box-item">
+                <figure class="card">
+                  <a href="#" class="c-in">
+                    <div class="pic">
+                      <img
+                        data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="tit-c">Bàn làm việc Wing màu trắng</p>
+                    <div class="heart-prc">
+                      <ion-icon name="heart-outline"></ion-icon>
+                      <p>14,630,000&nbsp;<span>đ</span></p>
+                    </div>
+                  </a>
+                  <div class="btn-link-more">
+                    <button class="d-none" type="button">thêm vào giỏ</button>
+                    <a class="d-none" href="#">xem thêm</a>
+                  </div>
+                </figure>
+              </div>
+              <div class="grid-box-item">
+                <figure class="card">
+                  <a href="#" class="c-in">
+                    <div class="pic">
+                      <img
+                        data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="tit-c">Bàn làm việc Wing màu trắng</p>
+                    <div class="heart-prc">
+                      <ion-icon name="heart-outline"></ion-icon>
+                      <p>14,630,000&nbsp;<span>đ</span></p>
+                    </div>
+                  </a>
+                  <div class="btn-link-more">
+                    <button class="d-none" type="button">thêm vào giỏ</button>
+                    <a class="d-none" href="#">xem thêm</a>
+                  </div>
+                </figure>
+              </div>
+              <div class="grid-box-item">
+                <figure class="card">
+                  <a href="#" class="c-in">
+                    <div class="pic">
+                      <img
+                        data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="tit-c">Bàn làm việc Wing màu trắng</p>
+                    <div class="heart-prc">
+                      <ion-icon name="heart-outline"></ion-icon>
+                      <p>14,630,000&nbsp;<span>đ</span></p>
+                    </div>
+                  </a>
+                  <div class="btn-link-more">
+                    <button class="d-none" type="button">thêm vào giỏ</button>
+                    <a class="d-none" href="#">xem thêm</a>
+                  </div>
+                </figure>
+              </div>
+              <div class="grid-box-item">
+                <figure class="card">
+                  <a href="#" class="c-in">
+                    <div class="pic">
+                      <img
+                        data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="tit-c">Bàn làm việc Wing màu trắng</p>
+                    <div class="heart-prc">
+                      <ion-icon name="heart-outline"></ion-icon>
+                      <p>14,630,000&nbsp;<span>đ</span></p>
+                    </div>
+                  </a>
+                  <div class="btn-link-more">
+                    <button class="d-none" type="button">thêm vào giỏ</button>
+                    <a class="d-none" href="#">xem thêm</a>
+                  </div>
+                </figure>
+              </div>
+              <div class="grid-box-item">
+                <figure class="card">
+                  <a href="#" class="c-in">
+                    <div class="pic">
+                      <img
+                        data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="tit-c">Bàn làm việc Wing màu trắng</p>
+                    <div class="heart-prc">
+                      <ion-icon name="heart-outline"></ion-icon>
+                      <p>14,630,000&nbsp;<span>đ</span></p>
+                    </div>
+                  </a>
+                  <div class="btn-link-more">
+                    <button class="d-none" type="button">thêm vào giỏ</button>
+                    <a class="d-none" href="#">xem thêm</a>
+                  </div>
+                </figure>
+              </div>
+              <div class="grid-box-item">
+                <figure class="card">
+                  <a href="#" class="c-in">
+                    <div class="pic">
+                      <img
+                        data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="tit-c">Bàn làm việc Wing màu trắng</p>
+                    <div class="heart-prc">
+                      <ion-icon name="heart-outline"></ion-icon>
+                      <p>14,630,000&nbsp;<span>đ</span></p>
+                    </div>
+                  </a>
+                  <div class="btn-link-more">
+                    <button class="d-none" type="button">thêm vào giỏ</button>
+                    <a class="d-none" href="#">xem thêm</a>
+                  </div>
+                </figure>
+              </div>
+              <div class="grid-box-item">
+                <figure class="card">
+                  <a href="#" class="c-in">
+                    <div class="pic">
+                      <img
+                        data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="tit-c">Bàn làm việc Wing màu trắng</p>
+                    <div class="heart-prc">
+                      <ion-icon name="heart-outline"></ion-icon>
+                      <p>14,630,000&nbsp;<span>đ</span></p>
+                    </div>
+                  </a>
+                  <div class="btn-link-more">
+                    <button class="d-none" type="button">thêm vào giỏ</button>
+                    <a class="d-none" href="#">xem thêm</a>
+                  </div>
+                </figure>
+              </div>
+              <div class="grid-box-item">
+                <figure class="card">
+                  <a href="#" class="c-in">
+                    <div class="pic">
+                      <img
+                        data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="tit-c">Bàn làm việc Wing màu trắng</p>
+                    <div class="heart-prc">
+                      <ion-icon name="heart-outline"></ion-icon>
+                      <p>14,630,000&nbsp;<span>đ</span></p>
+                    </div>
+                  </a>
+                  <div class="btn-link-more">
+                    <button class="d-none" type="button">thêm vào giỏ</button>
+                    <a class="d-none" href="#">xem thêm</a>
+                  </div>
+                </figure>
+              </div>
+              <div class="grid-box-item">
+                <figure class="card">
+                  <a href="#" class="c-in">
+                    <div class="pic">
+                      <img
+                        data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="tit-c">Bàn làm việc Wing màu trắng</p>
+                    <div class="heart-prc">
+                      <ion-icon name="heart-outline"></ion-icon>
+                      <p>14,630,000&nbsp;<span>đ</span></p>
+                    </div>
+                  </a>
+                  <div class="btn-link-more">
+                    <button class="d-none" type="button">thêm vào giỏ</button>
+                    <a class="d-none" href="#">xem thêm</a>
+                  </div>
+                </figure>
+              </div>
+              <div class="grid-box-item">
+                <figure class="card">
+                  <a href="#" class="c-in">
+                    <div class="pic">
+                      <img
+                        data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="tit-c">Bàn làm việc Wing màu trắng</p>
+                    <div class="heart-prc">
+                      <ion-icon name="heart-outline"></ion-icon>
+                      <p>14,630,000&nbsp;<span>đ</span></p>
+                    </div>
+                  </a>
+                  <div class="btn-link-more">
+                    <button class="d-none" type="button">thêm vào giỏ</button>
+                    <a class="d-none" href="#">xem thêm</a>
+                  </div>
+                </figure>
+              </div>
+              <div class="grid-box-item">
+                <figure class="card">
+                  <a href="#" class="c-in">
+                    <div class="pic">
+                      <img
+                        data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="tit-c">Bàn làm việc Wing màu trắng</p>
+                    <div class="heart-prc">
+                      <ion-icon name="heart-outline"></ion-icon>
+                      <p>14,630,000&nbsp;<span>đ</span></p>
+                    </div>
+                  </a>
+                  <div class="btn-link-more">
+                    <button class="d-none" type="button">thêm vào giỏ</button>
+                    <a class="d-none" href="#">xem thêm</a>
+                  </div>
+                </figure>
+              </div>
+              <div class="grid-box-item">
+                <figure class="card">
+                  <a href="#" class="c-in">
+                    <div class="pic">
+                      <img
+                        data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="tit-c">Bàn làm việc Wing màu trắng</p>
+                    <div class="heart-prc">
+                      <ion-icon name="heart-outline"></ion-icon>
+                      <p>14,630,000&nbsp;<span>đ</span></p>
+                    </div>
+                  </a>
+                  <div class="btn-link-more">
+                    <button class="d-none" type="button">thêm vào giỏ</button>
+                    <a class="d-none" href="#">xem thêm</a>
+                  </div>
+                </figure>
+              </div>
+              <div class="grid-box-item">
+                <figure class="card">
+                  <a href="#" class="c-in">
+                    <div class="pic">
+                      <img
+                        data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="tit-c">Bàn làm việc Wing màu trắng</p>
+                    <div class="heart-prc">
+                      <ion-icon name="heart-outline"></ion-icon>
+                      <p>14,630,000&nbsp;<span>đ</span></p>
+                    </div>
+                  </a>
+                  <div class="btn-link-more">
+                    <button class="d-none" type="button">thêm vào giỏ</button>
+                    <a class="d-none" href="#">xem thêm</a>
+                  </div>
+                </figure>
+              </div>
+              <div class="grid-box-item">
+                <figure class="card">
+                  <a href="#" class="c-in">
+                    <div class="pic">
+                      <img
+                        data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="tit-c">Bàn làm việc Wing màu trắng</p>
+                    <div class="heart-prc">
+                      <ion-icon name="heart-outline"></ion-icon>
+                      <p>14,630,000&nbsp;<span>đ</span></p>
+                    </div>
+                  </a>
+                  <div class="btn-link-more">
+                    <button class="d-none" type="button">thêm vào giỏ</button>
+                    <a class="d-none" href="#">xem thêm</a>
+                  </div>
+                </figure>
+              </div>
+              <div class="grid-box-item">
+                <figure class="card">
+                  <a href="#" class="c-in">
+                    <div class="pic">
+                      <img
+                        data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="tit-c">Bàn làm việc Wing màu trắng</p>
+                    <div class="heart-prc">
+                      <ion-icon name="heart-outline"></ion-icon>
+                      <p>14,630,000&nbsp;<span>đ</span></p>
+                    </div>
+                  </a>
+                  <div class="btn-link-more">
+                    <button class="d-none" type="button">thêm vào giỏ</button>
+                    <a class="d-none" href="#">xem thêm</a>
+                  </div>
+                </figure>
+              </div>
+              <div class="grid-box-item">
+                <figure class="card">
+                  <a href="#" class="c-in">
+                    <div class="pic">
+                      <img
+                        data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="tit-c">Bàn làm việc Wing màu trắng</p>
+                    <div class="heart-prc">
+                      <ion-icon name="heart-outline"></ion-icon>
+                      <p>14,630,000&nbsp;<span>đ</span></p>
+                    </div>
+                  </a>
+                  <div class="btn-link-more">
+                    <button class="d-none" type="button">thêm vào giỏ</button>
+                    <a class="d-none" href="#">xem thêm</a>
+                  </div>
+                </figure>
+              </div>
+              <div class="grid-box-item">
+                <figure class="card">
+                  <a href="#" class="c-in">
+                    <div class="pic">
+                      <img
+                        data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="tit-c">Bàn làm việc Wing màu trắng</p>
+                    <div class="heart-prc">
+                      <ion-icon name="heart-outline"></ion-icon>
+                      <p>14,630,000&nbsp;<span>đ</span></p>
+                    </div>
+                  </a>
+                  <div class="btn-link-more">
+                    <button class="d-none" type="button">thêm vào giỏ</button>
+                    <a class="d-none" href="#">xem thêm</a>
+                  </div>
+                </figure>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="box-ct">
-          <div class="ct">
-            <p>Không gian phòng ngủ</p>
-            <p>Những mẫu phòng ngủ của Nhà Xinh mang đến cảm giác ấm cúng, gần gũi và thoải mái</p>
-            <a href="#">
-              MẪU PHÒNG NGỦ &nbsp;
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </a>
-          </div>
-        </div>
-        <div class="box-ct">
-          <div class="ct">
-            <p>Không gian phòng ăn</p>
-            <p>Một bữa ăn ngon luôn là mong ước của mỗi gia đình. Không gian phòng ăn đóng vai trò rất quan trọng trong văn hóa Việt</p>
-            <a href="#">
-              MẪU PHÒNG ĂN &nbsp;
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </a>
-          </div>
-        </div>
-        <div class="box-img">
-          <a href="#">
-            <div class="pic">
-              <img data-set="../img/sys/mau-phong-khach-nha-xinh-24523.jpg" alt="">
-            </div>
-          </a>
-        </div> 
-        <div class="box-img">
-          <a href="#">
-            <div class="pic">
-              <img data-set="../img/sys/hang-trang-tri-nx-12-9-22.jpg" alt="">
-            </div>
-          </a>
-        </div> 
-        <div class="box-img">
-          <a href="#">
-            <div class="pic">
-              <img data-set="../img/sys/mau-phong-ngu-16-5-23.jpg" alt="">
-            </div>
-          </a>
-        </div> 
-        <div class="box-img">
-          <a href="#">
-            <div class="pic">
-              <img data-set="../img/sys/banner-phong-an-nha-xinh-12-9-22.jpg" alt="">
-            </div>
-          </a>
-        </div> 
-      </div>
-    </section>
-
-    <section class="sect-5 sect-card">
-      <div class="container">
-        <div class="tit">
-          <p>sản phẩm mới</p>
-          <a href="#">
-            xem tất cả
-            &nbsp;
-            <ion-icon name="chevron-forward-outline"></ion-icon>
-          </a>
-        </div>
-        <div class="box">
-          <div class="grid-box">
-            <div class="grid-box-item">
-              <figure class="card">
-                <a href="#" class="c-in">
-                  <div class="pic">
-                    <img data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg" alt="">
-                    <img data-set="../img/prod/ban-wing-768x509.jpg" alt="" class="d-none">
-                  </div>
-                  <p class="tit-c">Bàn làm việc Coastal</p>
-                  <div class="heart-prc">
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <p>14,900,000&nbsp;<span>đ</span></p>
-                  </div>
-                </a>
-                <div class="btn-link-more">
-                  <button class="d-none" type="button">thêm vào giỏ</button>
-                  <a class="d-none" href="#">xem thêm</a>
-                </div>
-              </figure>
-            </div>
-            <div class="grid-box-item">
-              <figure class="card">
-                <a href="#" class="c-in">
-                  <div class="pic">
-                    <img data-set="../img/prod/Armchair-Coastal-vai-Sevilla-768x511.jpg" alt="">
-                    <img data-set="../img/prod/Sofa-Coastal-1-cho-5-768x511.jpg" alt="" class="d-none">
-                  </div>
-                  <p class="tit-c">Sofa Coastal 1 chỗ KD1085-18 xanh M2</p>
-                  <div class="heart-prc">
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <p>15,900,000&nbsp;<span>đ</span></p>
-                  </div>
-                </a>
-                <div class="btn-link-more">
-                  <button class="d-none" type="button">thêm vào giỏ</button>
-                  <a class="d-none" href="#">xem thêm</a>
-                </div>
-              </figure>
-            </div>
-            <div class="grid-box-item">
-              <figure class="card">
-                <a href="#" class="c-in">
-                  <div class="pic">
-                    <img data-set="../img/prod/Ghe-an-Coastal-xanh.jpg" alt="">
-                    <img data-set="../img/prod/phong-an-coastal.jpg" alt="" class="d-none">
-                  </div>
-                  <p class="tit-c">Ghế ăn Coastal KD1085-18</p>
-                  <div class="heart-prc">
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <p>5,100,000&nbsp;<span>đ</span></p>
-                  </div>
-                </a>
-                <div class="btn-link-more">
-                  <button class="d-none" type="button">thêm vào giỏ</button>
-                  <a class="d-none" href="#">xem thêm</a>
-                </div>
-              </figure>
-            </div>
-            <div class="grid-box-item">
-              <figure class="card">
-                <a href="#" class="c-in">
-                  <div class="pic">
-                    <img data-set="../img/prod/Sofa-Coastal-3-cho-768x511.jpg" alt="">
-                    <img data-set="../img/prod/BST-Coastal-3-1-768x512.jpg" alt="" class="d-none">
-                  </div>
-                  <p class="tit-c">Sofa Coastal 2 chỗ KD1085-18 xanh M2</p>
-                  <div class="heart-prc">
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <p>32,900,000&nbsp;<span>đ</span></p>
-                  </div>
-                </a>
-                <div class="btn-link-more">
-                  <button class="d-none" type="button">thêm vào giỏ</button>
-                  <a class="d-none" href="#">xem thêm</a>
-                </div>
-              </figure>
-            </div>
-            <div class="grid-box-item">
-              <figure class="card">
-                <a href="#" class="c-in">
-                  <div class="pic">
-                    <img data-set="../img/prod/Giuong-Coastal-1m8-vang-1-768x511.jpg" alt="">
-                    <img data-set="../img/prod/BST-Coastal-4-768x512.jpg" alt="" class="d-none">
-                  </div>
-                  <p class="tit-c">Giường Coastal vàng 1m8</p>
-                  <div class="heart-prc">
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <p>31,900,000&nbsp;<span>đ</span></p>
-                  </div>
-                </a>
-                <div class="btn-link-more">
-                  <button class="d-none" type="button">thêm vào giỏ</button>
-                  <a class="d-none" href="#">xem thêm</a>
-                </div>
-              </figure>
-            </div>
-            <div class="grid-box-item">
-              <figure class="card">
-                <a href="#" class="c-in">
-                  <div class="pic">
-                    <img data-set="../img/prod/BAN-LAM-VIEC-WING-MAU-DEN-768x511.jpg" alt="">
-                    <img data-set="../img/prod/ban-wing-768x509.jpg" alt="" class="d-none">
-                  </div>
-                  <p class="tit-c">Bàn làm việc Coastal</p>
-                  <div class="heart-prc">
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <p>14,900,000&nbsp;<span>đ</span></p>
-                  </div>
-                </a>
-                <div class="btn-link-more">
-                  <button class="d-none" type="button">thêm vào giỏ</button>
-                  <a class="d-none" href="#">xem thêm</a>
-                </div>
-              </figure>
-            </div>
-            <div class="grid-box-item">
-              <figure class="card">
-                <a href="#" class="c-in">
-                  <div class="pic">
-                    <img data-set="../img/prod/Tu-Cabinet-Coastal-768x511.jpg" alt="">
-                    <img data-set="../img/prod/Tu-Cabinet-Coastal-1-768x511.jpg" alt="" class="d-none">
-                  </div>
-                  <p class="tit-c">Tủ Cabinet Coastal</p>
-                  <div class="heart-prc">
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <p>18,900,000&nbsp;<span>đ</span></p>
-                  </div>
-                </a>
-                <div class="btn-link-more">
-                  <button class="d-none" type="button">thêm vào giỏ</button>
-                  <a class="d-none" href="#">xem thêm</a>
-                </div>
-              </figure>
-            </div>
-            <div class="grid-box-item">
-              <figure class="card">
-                <a href="#" class="c-in">
-                  <div class="pic">
-                    <img data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg" alt="">
-                  </div>
-                  <p class="tit-c">Bàn làm việc Wing màu trắng</p>
-                  <div class="heart-prc">
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <p>14,630,000&nbsp;<span>đ</span></p>
-                  </div>
-                </a>
-                <div class="btn-link-more">
-                  <button class="d-none" type="button">thêm vào giỏ</button>
-                  <a class="d-none" href="#">xem thêm</a>
-                </div>
-              </figure>
-            </div>
-            <div class="grid-box-item">
-              <figure class="card">
-                <a href="#" class="c-in">
-                  <div class="pic">
-                    <img data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg" alt="">
-                  </div>
-                  <p class="tit-c">Bàn làm việc Wing màu trắng</p>
-                  <div class="heart-prc">
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <p>14,630,000&nbsp;<span>đ</span></p>
-                  </div>
-                </a>
-                <div class="btn-link-more">
-                  <button class="d-none" type="button">thêm vào giỏ</button>
-                  <a class="d-none" href="#">xem thêm</a>
-                </div>
-              </figure>
-            </div>
-            <div class="grid-box-item">
-              <figure class="card">
-                <a href="#" class="c-in">
-                  <div class="pic">
-                    <img data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg" alt="">
-                  </div>
-                  <p class="tit-c">Bàn làm việc Wing màu trắng</p>
-                  <div class="heart-prc">
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <p>14,630,000&nbsp;<span>đ</span></p>
-                  </div>
-                </a>
-                <div class="btn-link-more">
-                  <button class="d-none" type="button">thêm vào giỏ</button>
-                  <a class="d-none" href="#">xem thêm</a>
-                </div>
-              </figure>
-            </div>
-            <div class="grid-box-item">
-              <figure class="card">
-                <a href="#" class="c-in">
-                  <div class="pic">
-                    <img data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg" alt="">
-                  </div>
-                  <p class="tit-c">Bàn làm việc Wing màu trắng</p>
-                  <div class="heart-prc">
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <p>14,630,000&nbsp;<span>đ</span></p>
-                  </div>
-                </a>
-                <div class="btn-link-more">
-                  <button class="d-none" type="button">thêm vào giỏ</button>
-                  <a class="d-none" href="#">xem thêm</a>
-                </div>
-              </figure>
-            </div>
-            <div class="grid-box-item">
-              <figure class="card">
-                <a href="#" class="c-in">
-                  <div class="pic">
-                    <img data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg" alt="">
-                  </div>
-                  <p class="tit-c">Bàn làm việc Wing màu trắng</p>
-                  <div class="heart-prc">
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <p>14,630,000&nbsp;<span>đ</span></p>
-                  </div>
-                </a>
-                <div class="btn-link-more">
-                  <button class="d-none" type="button">thêm vào giỏ</button>
-                  <a class="d-none" href="#">xem thêm</a>
-                </div>
-              </figure>
-            </div>
-            <div class="grid-box-item">
-              <figure class="card">
-                <a href="#" class="c-in">
-                  <div class="pic">
-                    <img data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg" alt="">
-                  </div>
-                  <p class="tit-c">Bàn làm việc Wing màu trắng</p>
-                  <div class="heart-prc">
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <p>14,630,000&nbsp;<span>đ</span></p>
-                  </div>
-                </a>
-                <div class="btn-link-more">
-                  <button class="d-none" type="button">thêm vào giỏ</button>
-                  <a class="d-none" href="#">xem thêm</a>
-                </div>
-              </figure>
-            </div>
-            <div class="grid-box-item">
-              <figure class="card">
-                <a href="#" class="c-in">
-                  <div class="pic">
-                    <img data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg" alt="">
-                  </div>
-                  <p class="tit-c">Bàn làm việc Wing màu trắng</p>
-                  <div class="heart-prc">
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <p>14,630,000&nbsp;<span>đ</span></p>
-                  </div>
-                </a>
-                <div class="btn-link-more">
-                  <button class="d-none" type="button">thêm vào giỏ</button>
-                  <a class="d-none" href="#">xem thêm</a>
-                </div>
-              </figure>
-            </div>
-            <div class="grid-box-item">
-              <figure class="card">
-                <a href="#" class="c-in">
-                  <div class="pic">
-                    <img data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg" alt="">
-                  </div>
-                  <p class="tit-c">Bàn làm việc Wing màu trắng</p>
-                  <div class="heart-prc">
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <p>14,630,000&nbsp;<span>đ</span></p>
-                  </div>
-                </a>
-                <div class="btn-link-more">
-                  <button class="d-none" type="button">thêm vào giỏ</button>
-                  <a class="d-none" href="#">xem thêm</a>
-                </div>
-              </figure>
-            </div>
-            <div class="grid-box-item">
-              <figure class="card">
-                <a href="#" class="c-in">
-                  <div class="pic">
-                    <img data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg" alt="">
-                  </div>
-                  <p class="tit-c">Bàn làm việc Wing màu trắng</p>
-                  <div class="heart-prc">
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <p>14,630,000&nbsp;<span>đ</span></p>
-                  </div>
-                </a>
-                <div class="btn-link-more">
-                  <button class="d-none" type="button">thêm vào giỏ</button>
-                  <a class="d-none" href="#">xem thêm</a>
-                </div>
-              </figure>
-            </div>
-            <div class="grid-box-item">
-              <figure class="card">
-                <a href="#" class="c-in">
-                  <div class="pic">
-                    <img data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg" alt="">
-                  </div>
-                  <p class="tit-c">Bàn làm việc Wing màu trắng</p>
-                  <div class="heart-prc">
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <p>14,630,000&nbsp;<span>đ</span></p>
-                  </div>
-                </a>
-                <div class="btn-link-more">
-                  <button class="d-none" type="button">thêm vào giỏ</button>
-                  <a class="d-none" href="#">xem thêm</a>
-                </div>
-              </figure>
-            </div>
-            <div class="grid-box-item">
-              <figure class="card">
-                <a href="#" class="c-in">
-                  <div class="pic">
-                    <img data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg" alt="">
-                  </div>
-                  <p class="tit-c">Bàn làm việc Wing màu trắng</p>
-                  <div class="heart-prc">
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <p>14,630,000&nbsp;<span>đ</span></p>
-                  </div>
-                </a>
-                <div class="btn-link-more">
-                  <button class="d-none" type="button">thêm vào giỏ</button>
-                  <a class="d-none" href="#">xem thêm</a>
-                </div>
-              </figure>
-            </div>
-            <div class="grid-box-item">
-              <figure class="card">
-                <a href="#" class="c-in">
-                  <div class="pic">
-                    <img data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg" alt="">
-                  </div>
-                  <p class="tit-c">Bàn làm việc Wing màu trắng</p>
-                  <div class="heart-prc">
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <p>14,630,000&nbsp;<span>đ</span></p>
-                  </div>
-                </a>
-                <div class="btn-link-more">
-                  <button class="d-none" type="button">thêm vào giỏ</button>
-                  <a class="d-none" href="#">xem thêm</a>
-                </div>
-              </figure>
-            </div>
-            <div class="grid-box-item">
-              <figure class="card">
-                <a href="#" class="c-in">
-                  <div class="pic">
-                    <img data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg" alt="">
-                  </div>
-                  <p class="tit-c">Bàn làm việc Wing màu trắng</p>
-                  <div class="heart-prc">
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <p>14,630,000&nbsp;<span>đ</span></p>
-                  </div>
-                </a>
-                <div class="btn-link-more">
-                  <button class="d-none" type="button">thêm vào giỏ</button>
-                  <a class="d-none" href="#">xem thêm</a>
-                </div>
-              </figure>
-            </div>
-            <div class="grid-box-item">
-              <figure class="card">
-                <a href="#" class="c-in">
-                  <div class="pic">
-                    <img data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg" alt="">
-                  </div>
-                  <p class="tit-c">Bàn làm việc Wing màu trắng</p>
-                  <div class="heart-prc">
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <p>14,630,000&nbsp;<span>đ</span></p>
-                  </div>
-                </a>
-                <div class="btn-link-more">
-                  <button class="d-none" type="button">thêm vào giỏ</button>
-                  <a class="d-none" href="#">xem thêm</a>
-                </div>
-              </figure>
-            </div>
-            <div class="grid-box-item">
-              <figure class="card">
-                <a href="#" class="c-in">
-                  <div class="pic">
-                    <img data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg" alt="">
-                  </div>
-                  <p class="tit-c">Bàn làm việc Wing màu trắng</p>
-                  <div class="heart-prc">
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <p>14,630,000&nbsp;<span>đ</span></p>
-                  </div>
-                </a>
-                <div class="btn-link-more">
-                  <button class="d-none" type="button">thêm vào giỏ</button>
-                  <a class="d-none" href="#">xem thêm</a>
-                </div>
-              </figure>
-            </div>
-            <div class="grid-box-item">
-              <figure class="card">
-                <a href="#" class="c-in">
-                  <div class="pic">
-                    <img data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg" alt="">
-                  </div>
-                  <p class="tit-c">Bàn làm việc Wing màu trắng</p>
-                  <div class="heart-prc">
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <p>14,630,000&nbsp;<span>đ</span></p>
-                  </div>
-                </a>
-                <div class="btn-link-more">
-                  <button class="d-none" type="button">thêm vào giỏ</button>
-                  <a class="d-none" href="#">xem thêm</a>
-                </div>
-              </figure>
-            </div>
-            <div class="grid-box-item">
-              <figure class="card">
-                <a href="#" class="c-in">
-                  <div class="pic">
-                    <img data-set="../img/prod/Ban-lam-viec-Coastal-768x511.jpg" alt="">
-        
-    
-
-                  </div>
-                  <p class="tit-c">Bàn làm việc Wing màu trắng</p>
-                  <div class="heart-prc">
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <p>14,630,000&nbsp;<span>đ</span></p>
-                  </div>
-                </a>
-                <div class="btn-link-more">
-                  <button class="d-none" type="button">thêm vào giỏ</button>
-                  <a class="d-none" href="#">xem thêm</a>
-                </div>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
     </main>
     <footer>
       <div class="container">
@@ -751,28 +1119,33 @@
           <div class="grid-item">
             <ul>
               <li>
-    
-                <img data-set="../img/sys/logo-noi-that (5).jpg" alt="" class="d-none">
-    
+                <img
+                  data-set="../img/sys/logo-noi-that (5).jpg"
+                  alt=""
+                  class="d-none"
+                />
               </li>
               <li class="tit">FOLLOW ME</li>
               <li>
                 <figure>
-                  <a href="https://www.facebook.com/huunam66.dev" target="_blank">
+                  <a
+                    href="https://www.facebook.com/huunam66.dev"
+                    target="_blank"
+                  >
                     Facebook
-                    <i class='bx bxl-facebook-circle'></i>
+                    <i class="bx bxl-facebook-circle"></i>
                   </a>
                 </figure>
                 <figure>
                   <a href="https://www.instagram.com/__hnaw66/" target="_blank">
                     Instagram
-                    <i class='bx bxl-instagram-alt' ></i>
+                    <i class="bx bxl-instagram-alt"></i>
                   </a>
                 </figure>
                 <figure>
                   <a href="https://www.tiktok.com/@huunam662" target="_blank">
                     Tiktok
-                    <i class='bx bxl-tiktok' ></i>
+                    <i class="bx bxl-tiktok"></i>
                   </a>
                 </figure>
               </li>
@@ -825,10 +1198,10 @@
     <tt>Design by Nguyen Huu Nam #huunam66</tt>
   </body>
   <script
-  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-  integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
   ></script>
   <script src="../js/header.js" async></script>
   <script src="../js/card.js" async></script>

@@ -132,10 +132,10 @@
         </ul>
       </nav>
       <div class="s-log">
-        <a href="#" class="cart-ic">
+        <p class="cart-ic">
           <ion-icon name="cart-outline"></ion-icon>
           <span>10</span>
-        </a>
+        </p>
         <form class="s" action="#">
           <div class="c-in d-none">
             <input type="text" name="search" placeholder="Tìm kiếm" />
@@ -158,17 +158,22 @@
           <span></span>
         </div> -->
       </div>
-
-      <!-- <div class="cart">
+    </header>
+    <main>
+      <section class="cart">
         <div class="box">
+          <ion-icon class="close" name="close-outline"></ion-icon>
           <div class="tit-t">
             <p class="tit">giỏ hàng</p>
-            <p class="c-empty">không có sản phẩm nào trong giỏ hàng</p>
+            <!-- <p class="c-empty">không có sản phẩm nào trong giỏ hàng</p> -->
           </div>
-          <div class="cart-list">
+          <button class="all-cb">tất cả</button>
+          <button class="rmv-cb">hủy chọn</button>
+          <form class="cart-list" id="form-1" action="#" method="post">
             <ul class="list-pr">
               <li class="pr-item">
                 <figure>
+                  <input class="c-b" type="checkbox" name="" />
                   <img
                     src="../img/prod/BAN-LAM-VIEC-WING-MAU-DEN-768x511.jpg"
                     alt=""
@@ -181,83 +186,28 @@
                       <span>1.900.000</span>
                       <span
                         >SL:&nbsp;
-                        <input type="number" class="num-pr" />
+                        <input
+                          type="number"
+                          class="num-pr"
+                          value="1"
+                          min="1"
+                          max="100"
+                        />
                       </span>
                     </p>
                   </div>
-                  <button class="del-pr">xóa</button>
-                </figure>
-              </li>
-              <li class="pr-item">
-                <figure>
-                  <img
-                    src="../img/prod/BAN-LAM-VIEC-WING-MAU-DEN-768x511.jpg"
-                    alt=""
-                  />
-                  <div class="right">
-                    <p class="name-pr">
-                      ágagsggggggggggggggggggggggggggggggggggggggggggggagasgas
-                    </p>
-                    <p class="price-cou">
-                      <span>1.900.000</span>
-                      <span
-                        >SL:&nbsp;
-                        <input type="number" class="num-pr" />
-                      </span>
-                    </p>
-                  </div>
-                  <button class="del-pr">xóa</button>
-                </figure>
-              </li>
-              <li class="pr-item">
-                <figure>
-                  <img
-                    src="../img/prod/BAN-LAM-VIEC-WING-MAU-DEN-768x511.jpg"
-                    alt=""
-                  />
-                  <div class="right">
-                    <p class="name-pr">
-                      ágagsggggggggggggggggggggggggggggggggggggggggggggagasgas
-                    </p>
-                    <p class="price-cou">
-                      <span>1.900.000</span>
-                      <span
-                        >SL:&nbsp;
-                        <input type="number" class="num-pr" />
-                      </span>
-                    </p>
-                  </div>
-                  <button class="del-pr">xóa</button>
-                </figure>
-              </li>
-              <li class="pr-item">
-                <figure>
-                  <img
-                    src="../img/prod/BAN-LAM-VIEC-WING-MAU-DEN-768x511.jpg"
-                    alt=""
-                  />
-                  <div class="right">
-                    <p class="name-pr">
-                      ágagsggggggggggggggggggggggggggggggggggggggggggggagasgas
-                    </p>
-                    <p class="price-cou">
-                      <span>1.900.000</span>
-                      <span
-                        >SL:&nbsp;
-                        <input type="number" class="num-pr" />
-                      </span>
-                    </p>
-                  </div>
-                  <button class="del-pr">xóa</button>
+                  <p class="del-pr">xóa</p>
                 </figure>
               </li>
             </ul>
+          </form>
+          <div class="price-buy">
+            <p class="total-pri">13.151.512</p>
+            <button type="button" form="form-1">mua hàng</button>
           </div>
-          <p class="total-pri">13.151.512</p>
         </div>
-      </div> -->
-    </header>
-    <main>
+      </section>
+
       <section class="sect-1">
         <div class="container">
           <div class="ct move-to">
@@ -597,6 +547,7 @@
   ></script>
   <script src="../js/header.js" async></script>
   <script src="../js/card.js" async></script>
+  <script src="../js/cart.js" async></script>
   <script src="../js/lazy-loading.js" async></script>
   <script src="../js/mod-item.js" async></script>
   <script

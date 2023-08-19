@@ -13,6 +13,17 @@
   -webkit-backdrop-filter: blur(0.5rem);
 }
 
+.overflow-hd{
+  overflow: hidden;
+}
+
+
+@keyframes ani-open-cart{
+  100%{
+    right: 0;
+  }
+}
+
 .move-to{
   transform: translateX(var(--move-x)) translateY(var(--move-y));
   transition: all .0s !important;
